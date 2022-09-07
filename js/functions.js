@@ -160,7 +160,7 @@ function renderArmorChart(){
 	
 	if(bonusArmor2 != 0){
 		if(bonusArmor != 0){
-			if(penetration != 0){
+			if(penetration != 1000){
 				if(percentPenetration != 0){
 					++j;
 					data.push(newSeries("Bonus 2, Bonus, pen, percent"));
