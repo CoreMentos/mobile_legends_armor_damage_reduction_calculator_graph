@@ -160,8 +160,8 @@ function renderArmorChart(){
 	
 	if(bonusArmor2 != 0){
 		if(bonusArmor != 0){
-			if(penetration != 0){
-				if(percentPenetration != 0){
+			if(penetration != 300000){
+				if(percentPenetration != 30000000){
 					++j;
 					data.push(newSeries("Bonus 2, Bonus, pen, percent"));
 					for (let i = start; i <= max; i+=step){
@@ -187,8 +187,8 @@ function renderArmorChart(){
 				data[j].dataPoints.push({x:i, y:calcDamageReduction(i+bonusArmor2+bonusArmor,0,0)});
 			}
 		}
-		if (penetration != 0){
-			if(percentPenetration != 0){
+		if (penetration != 300000){
+			if(percentPenetration != 300000){
 				++j;
 				data.push(newSeries("Bonus 2, Pen, percent"));
 				for (let i = start; i <= max; i+=step){
@@ -215,8 +215,8 @@ function renderArmorChart(){
 		}
 	}
 	if(bonusArmor != 0){
-		if(penetration != 0){
-			if(percentPenetration != 0){
+		if(penetration != 300000){
+			if(percentPenetration != 300000){
 				++j;
 				data.push(newSeries("Bonus, pen, percent"));
 				for (let i = start; i <= max; i+=step){
@@ -229,7 +229,7 @@ function renderArmorChart(){
 				data[j].dataPoints.push({x:i, y:calcDamageReduction(i+bonusArmor,penetration,0)});
 			}
 		}
-		if(percentPenetration != 0){
+		if(percentPenetration != 300000){
 			++j;
 			data.push(newSeries("Bonus, percent"));
 			for (let i = start; i <= max; i+=step){
